@@ -7,6 +7,7 @@
     <link href="./output.css" rel="stylesheet">
     <title>FITCLUB</title>
 
+    <link rel="stylesheet" href="./src/output.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,67 +20,86 @@
 
 <body class="bg-[#111317] overflow-x-hidden">
     <header id="Home">
-        <nav class="  fixed top-0 w-full z-50 nav_flex pt-8 pl-24 font-semibold bg-[#111317]">
-            <img width="150px" src="https://webdesignmastery.github.io/Fitclub_25-07-23/assets/logo.png"
-                alt="FITCLUB logo">
+        <nav class="  fixed top-0 w-full z-50 nav_flex py-5 pl-4 md:pl-24  font-semibold bg-[#111317]">
+            <div class=" w-[40%] md:w-64 ">
+                <a href="#Home">
+                    <img width="180px" src="https://webdesignmastery.github.io/Fitclub_25-07-23/assets/logo.png"
+                        alt="FITCLUB logo">
+                </a>
 
-            <ul class="flex text-white gap-10 text-[1.2rem]">
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#Program">Program</a></li>
-                <li><a href="#Service">Service</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Community">Community</a></li>
+            </div>
+
+            <ul class="hidden md:mr-4 lg:flex text-white gap-8 text-[1.2rem]
+            ">
+                <li class="hover:border-b-[1px] hover:border-yellow-300 transition-all duration-300 " ><a href="#Home">Home</a></li>
+                <li class="hover:border-b-[1px] hover:border-yellow-300 transition-all duration-300 "><a href="#Program">Program</a></li>
+                <li class="hover:border-b-[1px] hover:border-yellow-300 transition-all duration-300 "><a href="#Service">Service</a></li>
+                <li class="hover:border-b-[1px] hover:border-yellow-300 transition-all duration-300 "><a href="#About">About</a></li>
+                <li class="hover:border-b-[1px] hover:border-yellow-300 transition-all duration-300 "><a href="#Community">Community</a></li>
             </ul>
 
-            <button class="text-white bg-[#F9AC54] p-3 rounded-[0.3rem] mr-[7.5rem] w-[8rem] h-12 ">Join Now</button>
+            <button class=" text-white text-[1.1rem] bg-[#F9AC54]  p-2 w-28 rounded-sm mr-4 md:mr-[7rem] h-10
+            hover:bg-amber-600 transition-all duration-300 hover:scale-90  ">Join
+                Now</button>
         </nav>
-
         <section class="hero">
-            <div class=" pt-10 flex ">
+            <div class="flex justify-center flex-col gap-16 md:pt-10 md:flex-row ">
 
                 <!--*************** text_part************** -->
-                <div class="h-screen w-1/2 pt-[10rem] pl-25  text-red-50 flex flex-col gap-[2rem]">
-                    <h3 class="text-[#F9AC54] font-semibold text-[1.5rem]">BEST FITNESS IN THE TOWN</h3>
-                    <h1 class=" text-[5rem] font-bold leading-[5rem]">
+                <div
+                    class="order-2 md:order-1 pl-8 pb-24 w-screen  text-red-50  flex flex-col gap-[2rem] md:w-1/2 md:pt-[10rem] md:pl-24">
+                    <h3 class="text-[#F9AC54] font-semibold text-2xl ">BEST FITNESS IN THE TOWN</h3>
+                    <h1 class=" text-5xl md:text-6xl font-bold leading-[5rem]">
                         <span> MAKE</span>
                         YOUR BODY SHAPE
                     </h1>
-                    <p class="leading-[1.3rem] ">Unleash your potential and embark on a journey towards a stronger,
+                    <p class="leading-[1.3rem] pr-4  ">Unleash your potential and embark on a journey towards a
+                        stronger,
                         fitter,
                         and more confident you. Sign up for 'Make Your Body Shape' now and witness the incredible
                         transformation your body is capable of! </p>
-                    <button class="text-white  flex items-start bg-[#F9AC54] p-[0.5rem] w-[6rem] rounded-[0.3rem]">Get
+                    <button class="text-white  flex items-start bg-[#F9AC54] p-[0.5rem] w-[6rem] rounded-[0.3rem]
+                    hover:bg-amber-600 transition-all duration-300 hover:scale-90">Get
                         Started</button>
                 </div>
                 <!-- ************** img_part -->
-                <div class="h-screen w-1/2  flex_ac_jc">
-                    <img class="h-[30rem]" src="https://webdesignmastery.github.io/Fitclub_25-07-23/assets/header.png"
+                <div
+                    class="order-1 md:order-2 mt-20 w-screen flex_ac_jc md:h-screen md:w-1/2 md:mt-1 md:flex justify-start">
+                    <img class="h-[25rem] md:h-[30rem]"
+                        src="https://webdesignmastery.github.io/Fitclub_25-07-23/assets/header.png"
                         alt="Bodybuilding Man Image">
 
                 </div>
             </div>
         </section>
+
     </header>
 
-    <section id="Program">
+    <section id="Program" class="overflow-x-hidden">
 
         <!-- ********* program nav ************* -->
 
-        <div class="nav_flex py-[7rem] px-[7rem]">
-            <div class="pt-10 text-white text-[2rem] font-Poppins-600">
+        <div class="nav_flex pl-8 pr-4 
+         md:pt-24 md:px-[6.5rem]">
+            <div class=" text-white text-[1rem] font-bold
+            md:text-[2rem] font-Poppins-600">
                 <H1>EXPLORE OUR PROGRAM</H1>
             </div>
-            <div class="text-white text-4xl">
+            <div class="text-white text-3xl 
+            md:text-4xl">
                 <i class="ri-arrow-left-circle-line"></i>
                 <i class="ri-arrow-right-circle-line"></i>
             </div>
         </div>
 
         <!--*********** Program box part ********* -->
-        <div class="w-screen flex">
-            <div class="ml-[8rem] pb-7 flex">
+        <div class="w-full flex ">
+            <div class=" py-7 flex flex-col gap-6
+            md:ml-8  md:flex-row md:items-center md:justify-center md:flex-wrap md:gap-4 md:pb-7 ">
                 <!-- this is box1 -->
-                <div class=" rounded-2xl bg-[#1F2125]  p-2 flex basis-[20%] border">
+                <div class=" rounded-2xl bg-[#1F2125] mx-[3rem]  p-2 flex basis-[20%] border
+                md:basis-[35%]
+                hover:bg-[#2e3035] hover:border-amber-400 transition-all duration-300 hover:scale-102">
                     <div class="text-white p-2 flex flex-col gap-[1rem] ">
                         <div class="p-1 pl-2 w-12 text-3xl bg-[#D79447] rounded-[0.2rem] ">
                             <i class="ri-boxing-fill"></i>
@@ -97,7 +117,9 @@
                 </div>
 
                 <!-- this is box2 -->
-                <div class=" rounded-2xl bg-[#1F2125] ml-[3rem] p-2 flex basis-[20%] border">
+                <div class=" rounded-2xl bg-[#1F2125] mx-[3rem] p-2 flex basis-[20%] border
+                md:basis-[35%]
+                hover:bg-[#2e3035] hover:border-amber-400 transition-all duration-300 hover:scale-102">
                     <div class="text-white p-2 flex flex-col gap-[1rem] ">
                         <div class="p-1 pl-2 w-12 text-3xl bg-[#D79447] rounded-[0.2rem] ">
                             <i class="ri-heart-add-line"></i>
@@ -114,7 +136,9 @@
                     </div>
                 </div>
                 <!-- this is box3 -->
-                <div class=" rounded-2xl bg-[#1F2125] ml-[3rem] p-2 flex basis-[20%] border">
+                <div class=" rounded-2xl bg-[#1F2125] mx-[3rem] p-2 flex basis-[20%] border
+                md:basis-[35%]
+                hover:bg-[#2e3035] hover:border-amber-400 transition-all duration-300 hover:scale-102">
                     <div class="text-white p-2 flex flex-col gap-[1rem] ">
                         <div class="p-1 pl-2 w-12 text-3xl bg-[#D79447] rounded-[0.2rem] ">
                             <i class="ri-run-fill"></i>
@@ -131,7 +155,9 @@
                     </div>
                 </div>
                 <!-- this is box4 -->
-                <div class=" rounded-2xl bg-[#1F2125] ml-[3rem] p-2 flex basis-[20%] border">
+                <div class=" rounded-2xl bg-[#1F2125] mx-[3rem] p-2 flex basis-[20%] border
+                md:basis-[35%]
+                hover:bg-[#2e3035] hover:border-amber-400 transition-all duration-300 hover:scale-102">
                     <div class="text-white p-2 flex flex-col gap-[1rem] ">
                         <div class="p-1 pl-2 w-12 text-3xl bg-[#D79447] rounded-[0.2rem] ">
                             <i class="ri-shopping-basket-fill"></i>
@@ -157,34 +183,42 @@
     <section id="Service">
 
         <!-- service_mai -->
-        <div class="w-screen pt-36 flex   ">
+        <div class="w-screen pt-32 flex flex-col items-center overflow-x-hidden 
+        lg:pt-40 lg:flex-row">
 
             <!-- img_part -->
-            <div class="w-1/2   ">
-                <div class="  ml-[10rem] h-[30rem]">
-                    <img class="  h-[20rem] object-cover object-center rounded-2xl"
+            <div class="lg:w-1/2 ">
+                <div class=" h-[30rem] px-4 
+                lg:ml-[10rem] ">
+                    <img class="  h-[20rem]   rounded-2xl
+                     lg:object-cover lg:object-center "
                         src="https://webdesignmastery.github.io/Fitclub_25-07-23/assets/class-1.jpg" alt="">
                 </div>
-                <div class=" absolute  mx-[7rem] my-[-15rem]">
+                <div class=" absolute  mx-6 my-[-15rem]
+                  lg:mx-[7rem] lg:my-[-15rem]">
                     <img class="rounded-2xl w-[16rem] object-cover"
                         src="https://webdesignmastery.github.io/Fitclub_25-07-23/assets/class-2.jpg" alt="">
                 </div>
             </div>
 
             <!-- text_part -->
-            <div class="w-1/2 text-gray-300  flex flex-col gap-8 ">
-                <div class="mt-[4rem] w-[23rem]">
+            <div class=" pb-4 text-gray-300 w-[100%] px-8 flex flex-col  gap-8
+            lg:w-1/2 lg:pl-16 lg:px-32">
+                <div class="mt-0.5
+                lg:mt-[4rem] lg:w-[23rem] ">
                     <h1 class="text-[2rem] font-bold
                         ">THE CLASS YOU WILL GET HERE</h1>
                 </div>
-                <div class="w-[32rem] text-[1rem] font-semibold">
+                <div class=" text-[1rem] font-semibold
+                  ">
                     <p>Led by our team of expert and motivational instructors, "The Class You Will Get Here" is a
                         high-energy, results-driven session that combines a perfect blend of cardio, strength training,
                         and functional exercises. Each class is carefully curated to keep you engaged and challenged,
                         ensuring you never hit a plateau in your fitness endeavors. </p>
                 </div>
                 <button
-                    class="text-white  flex items-center bg-[#F9AC54] pl-[1rem] p-[0.8rem] w-[8rem] rounded-[0.3rem]">
+                    class="text-white  flex items-center bg-[#F9AC54] pl-[1rem] p-[0.8rem] w-[8rem] rounded-[0.3rem]
+                    hover:bg-amber-600 transition-all duration-300 hover:scale-90">
                     Book A Class
                 </button>
 
@@ -195,65 +229,71 @@
 
     <section id="About">
         <!-- about_main -->
-        <div class="">
+        <div class="w-full overflow-x-hidden ">
 
             <!-- text_part -->
-            <div class="pt-[6rem] w-screen text-white flex_ac_jc">
-                <h1 class="text-[2.5rem] font-semibold">WHY JOIN US ?</h1>
+            <div class="pt-32 w-screen text-white flex_ac_jc
+            ">
+                <h1 class="text-2xl font-semibold  lg:text-[2.5rem]">WHY JOIN US ?</h1>
             </div>
 
             <div class=" py-5 text-white   flex_ac_jc flex-col">
-                <p class="pl-8 w-[40rem] text-xl">Our diverse membership base creates a friendly and supportive </p>
-                <p class="pl-11 w-[40rem] text-xl">atmosphere, where you can make friends and stay motivated.</p>
+                <p class="pl-8 ">Our diverse membership base creates a friendly and supportive atmosphere, where you can
+                    make friends and stay motivated. </p>
+
             </div>
             <!-- image_part -->
-            <div class="flex_ac_jc relative  p-24">
-                <img class="w-5xl rounded-2xl  object-cover"
-                    src="https://webdesignmastery.github.io/Fitclub_25-07-23/assets/join.jpg" alt="">
+            <div class=" flex items-center flex-col w-[100%] h-screen relative p-4">
+                <img class="rounded-2xl
+                lg:w-5xl" src="https://webdesignmastery.github.io/Fitclub_25-07-23/assets/join.jpg" alt="about image">
 
                 <!-- about_bottom -->
-                <div class="absolute flex items-end h-[35rem]">
-                    <div class=" h-32  rounded-2xl px-5 bg-[#1F2125] flex ">
+                <div class=" flex pt-6  
+                lg:absolute lg:items-end lg:h-[34rem] lg:pb-8  ">
+
+                    <div class=" gap-8 py-4 rounded-2xl pl-2 bg-[#1F2125] flex flex-wrap 
+
+                    hover:bg-[#2e3035] hover:border-[2px] hover:border-amber-400 transition-all duration-300 hover:scale-101">
                         <!-- box1 -->
                         <div class="flex items-center gap-3">
                             <div class="">
                                 <!-- icon_part -->
-                                <div class="p-1 pl-2 w-12 text-white text-3xl bg-[#D79447] rounded-[0.2rem] ">
+                                <div class="p-1 pl-2  text-white text-3xl bg-[#D79447] rounded-[0.2rem] ">
                                     <i class="ri-contacts-fill"></i>
                                 </div>
                             </div>
                             <!-- text_part -->
                             <div class="text-white flex flex-col gap-2">
                                 <h3 class="font-bold ">Personal Trainer</h3>
-                                <P class="w-3xs">Unlock your potential with our expert Personal Trainers.</P>
+                                <P class="md:w-3xs">Unlock your potential with our expert Personal Trainers.</P>
                             </div>
                         </div>
                         <!-- box2 -->
                         <div class="flex items-center gap-3">
                             <div class="">
                                 <!-- icon_part -->
-                                <div class="p-1 pl-2 w-12 text-white text-3xl bg-[#D79447] rounded-[0.2rem] ">
+                                <div class="p-1 pl-2 md:w-12 text-white text-3xl bg-[#D79447] rounded-[0.2rem] ">
                                     <i class="ri-vidicon-fill"></i>
                                 </div>
                             </div>
                             <!-- text_part -->
                             <div class="text-white flex flex-col gap-2">
                                 <h3 class="font-bold ">Practice Sessions</h3>
-                                <P class="w-48">Elevate your fitness with practice sessions.</P>
+                                <P class="md:w-48">Elevate your fitness with practice sessions.</P>
                             </div>
                         </div>
                         <!-- box3 -->
                         <div class="flex items-center gap-3">
                             <div class="">
                                 <!-- icon_part -->
-                                <div class="p-1 pl-2 w-12 text-3xl text-white bg-[#D79447] rounded-[0.2rem] ">
+                                <div class="p-1 pl-2 md:w-12 text-3xl text-white bg-[#D79447] rounded-[0.2rem] ">
                                     <i class="ri-hotel-line"></i>
                                 </div>
                             </div>
                             <!-- text_part -->
                             <div class="text-white flex flex-col gap-2">
                                 <h3 class="font-bold ">Good Management</h3>
-                                <P class="w-3xs">Supportive management, for your fitness success.</P>
+                                <P class="md:w-3xs">Supportive management, for your fitness success.</P>
                             </div>
                         </div>
                     </div>
@@ -266,22 +306,26 @@
 
     <section id="Community">
         <!-- main_part -->
-        <div class="pt-28">
+        <div class="pt-24">
             <!-- text_part -->
             <div class="text-white flex_ac_jc flex-col">
-                <h1 class="text-4xl font-bold">OUR PRICING PLAN</h1>
-                <p class="text-2xl text-gray-300">Our pricing plan comes with various membership tiers, each tailored to
+                <h1 class="md:ml-8 text-2xl font-bold md:text-4xl ">OUR PRICING PLAN</h1>
+                <p class="ml-8 text-gray-300 md:text-2xl md:mt-10 ">Our pricing plan comes with various membership
+                    tiers, each tailored to cater to different preferences and fitness aspirations.
                 </p>
-                <p class="text-2xl text-gray-300">cater to different preferences and fitness aspirations.</p>
+
             </div>
             <!-- box_part -->
-            <div class="h-screen px-[13rem] flex_ac_jc gap-8 ">
-                <div class="bg-[#1F2125] text-white rounded-xl w-[23rem] h-[33rem] p-12">
+            <div class=" py-16 px-8 flex justify-center flex-wrap gap-8 ">
+                <!-- box1 -->
+                <div class="bg-[#1F2125] text-white rounded-xl w-[23rem] p-4
+                hover:bg-[#2e3035] hover:border-[2px] hover:border-amber-400 transition-all duration-300 hover:scale-105 ">
                     <div class="box1">
                         <h1 class="text-2xl font-serif">Basic Plan</h1>
-                        <p class="text-3xl font-bold mt-12">$16</p>
+                        <p class="text-3xl font-bold mt-4">$16</p>
 
-                        <div class="mt-10 border-t flex flex-col gap-30">
+                        <div class="mt-5 border-t flex flex-col gap-30
+                        ">
                             <div class="text mt-8 leading-8">
                                 <h3 class="font-semibold">
                                     <i class="ri-verified-badge-line"></i>
@@ -292,18 +336,20 @@
                                     At home workout
                                 </h3>
                             </div>
-                            <div class=" flex_ac_jc h-16 border-2 border-[#F9AC54]">
+                            <div class=" flex_ac_jc h-14 border-2 border-[#F9AC54]">
                                 <button class="text-[#F9AC54]">Join Now</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="bg-[#1F2125] text-white rounded-xl w-[23rem] h-[33rem] p-12 ">
+                <!-- box2 -->
+                <div class="bg-[#1F2125] text-white rounded-xl w-[23rem] p-4
+                hover:bg-[#2e3035] hover:border-[2px] hover:border-amber-400 transition-all duration-300 hover:scale-105">
                     <div class="box2">
                         <h1 class="text-2xl font-serif">Weekly Plan</h1>
-                        <p class="text-3xl font-bold mt-12">$25</p>
+                        <p class="text-3xl font-bold mt-4">$25</p>
 
-                        <div class="mt-10 border-t flex flex-col gap-22">
+                        <div class="mt-5 border-t flex flex-col gap-22">
                             <div class="text mt-8 leading-8">
                                 <h3 class="font-semibold">
                                     <i class="ri-verified-badge-line"></i>
@@ -318,18 +364,20 @@
                                     At home workouts
                                 </h3>
                             </div>
-                            <div class=" flex_ac_jc h-16 border-2 border-[#F9AC54]">
+                            <div class=" flex_ac_jc h-14 border-2 border-[#F9AC54]">
                                 <button class="text-[#F9AC54]">Join Now</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="bg-[#1F2125] text-white rounded-xl w-[23rem] h-[33rem] p-12">
+                <!-- box3 -->
+                <div class="bg-[#1F2125] text-white rounded-xl w-[23rem] p-4
+                hover:bg-[#2e3035] hover:border-[2px] hover:border-amber-400 transition-all duration-300 hover:scale-105">
                     <div class="box3">
                         <h1 class="text-2xl font-serif">Monthly Plan</h1>
-                        <p class="text-3xl font-bold mt-12">$45</p>
+                        <p class="text-3xl font-bold mt-4">$45</p>
 
-                        <div class="mt-10 border-t flex flex-col gap-5">
+                        <div class="mt-5 border-t flex flex-col gap-6">
                             <div class="text mt-8 leading-8">
                                 <h3 class="font-semibold">
                                     <i class="ri-verified-badge-line"></i>
@@ -352,7 +400,7 @@
                                     Personal Training
                                 </h3>
                             </div>
-                            <div class=" flex_ac_jc h-16 border-2 border-[#F9AC54]">
+                            <div class=" flex_ac_jc h-14 border-2 border-[#F9AC54]">
                                 <button class="text-[#F9AC54]">Join Now</button>
                             </div>
                         </div>
@@ -365,19 +413,19 @@
     </section>
 
     <section class="review">
-        <div class="px-48 bg-[#1F2125] py-16">
+        <div class="bg-[#1F2125] px-4 py-16 md:px-48 md:py-16 overflow-x-hidden">
 
-            <div class="flex">
+            <div class="flex flex-col md:flex-row">
                 <!-- 1st part -->
-                <div class="text-[#8C673D] text-[7rem]">
+                <div class="text-[#8C673D] text-6xl md:text-[7rem]">
                     <i class="ri-double-quotes-r"></i>
                 </div>
 
                 <div class="review and profile">
                     <!-- text-and-star -->
-                    <div class="flex flex-col gap-4 w-[68rem]">
-                        <h1 class="text-white font-semibold text-2xl">MEMBER REVIEW</h1>
-                        <p class=" text-gray-300 text-xl w-[55rem] ">What truly sets this gym apart is their expert team
+                    <div class="flex flex-col gap-4 ">
+                        <h1 class="text-white font-semibold">MEMBER REVIEW</h1>
+                        <p class=" text-gray-300 text-xl">What truly sets this gym apart is their expert team
                             of trainers. The trainers are
                             knowledgeable, approachable, and genuinely invested in helping members achieve their fitness
                             goals. They take the time to understand individual needs and create personalized workout
@@ -392,20 +440,21 @@
                     </div>
                     
                     <!-- bottom_part -->
-                    <div class="mt-16 flex items-center justify-between">
+                    <div class="mt-16 flex items-center justify-between
+                    md:mt-16 ">
                         <div class="flex items-center gap-4">
                             <img class="rounded-full" width="60px"
                                 src="https://webdesignmastery.github.io/Fitclub_25-07-23/assets/member.jpg"
                                 alt="profile photo">
 
-                            <div class=" text-2xl">
+                            <div class=" md:text-2xl">
                                 <h1 class="text-white">Jane Cooper</h1>
                                 <p class="text-gray-300 text-xl">Software Developer</p>
                             </div>
                         </div>
 
                         <!-- arrow -->
-                        <div class="text-[#F9AC54] text-5xl"> 
+                        <div class="text-[#F9AC54] text-4xl md:text-5xl"> 
                             <i class="ri-arrow-left-circle-fill"></i>
                             <i class="ri-arrow-right-circle-fill"></i>
                             
@@ -419,11 +468,11 @@
     </section>
 
     <footer>
-        <div class="main pl-48 mt-20 items-center">
-            <div class="main2  flex gap-32">
+        <div class="main pl-4 mt-20 items-center md:pl-48 overflow-x-hidden">
+            <div class="main2  flex flex-wrap gap-16 md:gap-32">
                 <div class="box1">
                     <img width="150px" src="https://webdesignmastery.github.io/Fitclub_25-07-23/assets/logo.png" alt="">
-                    <p class="w-96 text-xl text-[#d1d5db] mt-8">Take the first step towards a healthier, stronger you with our unbeatable pricing plans. Let's sweat, achieve, and conquer together! </p>
+                    <p class="md:w-96 text-xl text-[#d1d5db] mt-8">Take the first step towards a healthier, stronger you with our unbeatable pricing plans. Let's sweat, achieve, and conquer together! </p>
                     <div class="text-4xl text-[#F9AC54] mt-8">
                         <i class="ri-facebook-circle-line"></i>
                         <i class="ri-instagram-line"></i>
@@ -432,7 +481,7 @@
                 </div>
                 <div class="box2">
                     <h1 class="text-white text-2xl font-semibold">Company</h1>
-                    <div class="w-8 text-xl text-[#d1d5db] mt-8 flex flex-col gap-6">
+                    <div class="md:w-8 text-xl text-[#d1d5db] mt-8 flex flex-col gap-6">
                         <p>Business</p>
                         <p>Franchise</p>
                         <p>Partnership</p>
@@ -441,7 +490,7 @@
                 </div>
                 <div class="box3">
                     <h1 class="text-white text-2xl font-semibold">About Us</h1>
-                    <div class="w-8 text-xl text-[#d1d5db] mt-8 flex flex-col gap-6">
+                    <div class="md:w-8 text-xl text-[#d1d5db] mt-8 flex flex-col gap-6">
                         <p>Blogs</p>
                         <p>Security</p>
                         <p>careers</p>
@@ -457,7 +506,7 @@
                     </div>
                 </div>
             </div>
-            <p class="mt-24 mb-4 text-white">Copyright © 2023 Web Design Mastery. All rights reserved. </p>
+            <p class="mt-24 mb-4 text-white">Copyright © 2025 MD Kamrujjaman AL Kudrot. All rights reserved. </p>
         </div>
     </footer>
 </body>
